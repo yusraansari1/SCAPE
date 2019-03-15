@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Own Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="https://www.fonts.com/font/fort-foundry/industry/book" rel="stylesheet">
+	<link href="https://www.fonts.com/font/yellow-design-studio/lulo-clean/one" rel="stylesheet">
+	<link href="https://www.fonts.com/font/linotype/neue-helvetica-armenian/25-ultralight" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style type="text/css">
+    body { padding-top: 70px; 
+           background: rgba(10,120,230,0.6);
+       }
+    .jumbotron {
+      color: #2c3e50;
+      background: rgba(125,125,125,0.3);
+
+    }
+    .navbar-inverse {
+      background: #2c3e90;
+      color: white;
+    }
+    .navbar-inverse .navbar-brand, .navbar-inverse a{
+      color:white;
+    }
+    .navbar-inverse .navbar-nav>li>a {
+      color: white;
+    } 
+    .hui {
+    	flex=3;
+    	display: flex;
+    
+    }
+    .lo {
+    	flex=3;
+    	display: flex;
+    
+    }
+    .fo{
+    	flex=3;
+    	display: flex;
+    
+    }
+    .lp{
+    	flex=3;
+    	display: flex;
+    
+    }
+    .footermaindiv{
+    display:flex;
+    padding:30px;
+    background-color: rgba(0,158,158,0.5);
+    justify-content: center;
+    }
+    .footermaindiv ul{
+    list-style-type: none;
+    margin-right:120px;
+    }
+    .footermaindiv ul li{
+    padding:2px;
+    font-size:13px;
+    }
+    .footermaindiv ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: lighter;}
+    .thelast{
+    color: dark-gray;
+    font-weight: lighter;
+    margin-bottom:10px;
+    font-size:12px;
+    }
+    @media screen and (max-width: 776px) {
+    	.footermaindiv{
+       display:flex;
+       flex-direction:column; 
+   } 
+    .footerseconddiv{
+        display:flex;
+        flex-direction:column;
+    }
+    .footermaindiv ul li{
+        font-size: 15px;
+    }
+    .footermaindiv ul li a{
+        font-weight: lighter;
+    }
+    }
+    .center {
+     margin: auto;
+     width: 50%;
+     padding: 20px;
+     text-align: center;
+}
+@media screen and (max-width: 776px) {
+    .secmain{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .secmain .info{
+        align-self: center;
+        background-color: #1EBEA5; 
+        margin:0;
+        width:100%;
+        height:400px;
+    }
+    .info ul{
+        display:none;
+    }
+    .secmain .info p{
+        color:white;
+        text-align: center;
+    }
+    #thesec{
+        color:white;
+        text-align: center;
+        font-size: 20px;
+    }
+    .google-play{
+        display:block;
+        width:150px;
+        height:50px;
+        margin:10px auto;
+    }
+    .colorgray{
+        display:none;
+    }
+    .secmain .imagediv{
+        display:none;
+    }
+    .secmain .imagediv2{
+        display:block;
+        margin:0;
+        width:100%;
+        background-color: #1EBEA5;
+        text-align: center;
+    }
+    .thirdmain{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .thirdmain .bus{
+        align-self: center;
+        margin:0;
+        width:100%;
+    }
+    .thirdmain .letsencrypt{
+        align-self: center;
+        margin:0;
+        width:100%;        
+    }
+   .footermaindiv{
+       display:flex;
+       flex-direction:column; 
+   } 
+    .footerseconddiv{
+        display:flex;
+        flex-direction:column;
+    }
+    .footermaindiv ul li{
+        font-size: 15px;
+    }
+    .footermaindiv ul li a{
+        font-weight: lighter;
+    }
+    .incing{
+        margin:5px 0;
+    }
+}
+.ama {
+	border: 3px solid blue;
+	padding: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+} 
+.name {
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    font-style: normal; 
+}
+.chang {
+	font-family: Comic Sans® Pro Regular;
+}
+.bm {
+	font-family: 'Industry Std Book', sans-serif;
+	color: rgb(0,0,255);
+}
+.chng {
+	font-family: 'Lulo Clean Std One', sans-serif;
+}
+.price {
+	font-family: 'Neue Helvetica® Armenian 25 UltraLight', sans-serif;
+	color: green;
+	font-weight: bold;
+}
+.thirdmain{
+    display:flex;
+    justify-content: center;
+}
+.bus{
+    background-color: #D0E9EA;
+    margin:10px;
+    text-align: center;
+    flex:2;
+}
+#businessheading{
+    font-size:25px;
+    margin-top:70px;
+    margin-bottom:0px;
+}
+#businesspara{
+    margin-bottom:37px;
+    font-size:15px;
+    font-weight: lighter;
+}
+.mobile-image{
+    align-self: center;
+}
+.letsencrypt{
+    background-color: #AAF8FD;
+    margin:10px;
+    text-align: center;
+    flex:2;
+}
+.somepara{
+    font-size:14px;
+    font-weight:lighter;
+}
+.etepara{
+    font-size:12px;
+    font-weight:lighter;
+    color:gray;
+}
+#pri{
+    font-size:25px;
+    margin-top:0px;
+}
+.iframe{
+    margin-top:50px;
+    width:250px;
+    height:250px;
+}
+
+  </style>
+}
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+				<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture"></span> SCAPE</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<div class="container">
+ <div class="jumbotron">
+    <h1 class="chang"><img height="70" width="8%" src="logo.jpeg"></span><u>Welcome To My Painting Gallery</u> </h1>
+    <p>If I've learned anything through all of this, it's that each and every day is a canvas waiting to be painted - an opportunity for love, for fun, for living, for learning.</p> 
+  </div>
+
+    <div class="row ">
+      <div class="hui col-md-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="SC 14.jpg">
+        </div>
+      </div>
+      <div class="hui col-md-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="SC 2.jpeg">
+        </div>
+      </div>
+      <div class="hui col-md-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="SC 6.jpg">
+        </div>
+      </div>
+      <div class="lo col-md-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="SC 9.jpg">
+        </div>
+      </div>
+      <div class="lo col-md-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="SC 7.jpg">
+        </div>
+      </div>
+      <div class="lo col-md-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="SC 8.jpg">
+        </div>
+      </div>
+      <div class="fo col-md-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="SC 12.jpg">
+        </div>
+      </div>
+      <div class="fo col-md-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="SC 10.jpg">
+      </div>
+    </div>
+    <div class="fo col-md-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="SC 11.jpg">
+      </div>
+    </div>
+    </div>
+    <!-- Bookmark -->
+    <h2 class="bm"><u>Not only paintaings, BOOKMARKS are available too</u></h2>
+    <div class="row ">
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+          <img src="BM 6.jpg">
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+          <img src="BM 7.jpg">
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+          <img src="BM 8.jpg">
+        </div>
+      </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+          <img src="BM 9.jpg">
+      </div>
+    </div>
+    </div>
+    <!--<div>
+    <div>
+    <h1 class="chng"><u>Price of Artprints with and without frames</u></h1>
+    <p class="price">-Wooden frames with glass</p>
+    <p class="price">-size: A4</p>
+    <ul class="price">
+    	<li>Artprints without frames: Rs.300</li>
+    	<li>Artprints with frames: Rs.800</li>
+    </ul>
+    </div>
+    <div>
+    <h1 class="chng"><u>Price of Customized Paintings</u></h1>
+    	<ul class="price">
+    		<li>Without frame:</li>
+    		<p>A5- Rs.800</p><p>A4- Rs.1000</p><p>A3- Rs.1700</p>
+    		<li>With frames(black 1/2* bordered wooden)</li>
+    		<p>A5- Rs.1000</p><p>A4- Rs.1200</p><p>A3- Rs.1700</p>
+    	</ul>
+    </div>
+    </div>-->
+    <div class="thirdmain">
+            <div class="bus">
+                <p id="businessheading" class="chng">Price of Artprints with and without frames</p>
+                <p id="businesspara">
+                    <p class="price">-Wooden frames with glass</p>
+                    <p class="price">-size: A4</p>
+                    <ul class="price">
+    	               <li>Artprints without frames: Rs.300</li>
+    	               <li>Artprints with frames: Rs.800</li>
+                    </ul>
+                </p>
+                 <p id="businessheading" class="chng">Price of Customized Paintaings</p>
+                <p id="businesspara">
+                    <ul class="price">
+    		          <li>Without frame:</li>
+    		            <p>A5- Rs.800</p><p>A4- Rs.1000</p><p>A3- Rs.1700</p>
+    		          <li>With frames(black 1/2* bordered wooden)</li>
+    		            <p>A5- Rs.1000</p><p>A4- Rs.1200</p><p>A3- Rs.1700</p>
+    	            </ul>
+                </p> 
+            </div>
+            <div class="letsencrypt">
+            	<video width="500" height="395" controls>
+            		<source class="iframe" src="SCAPE vid.mp4" type="video/mp4">
+            	</video>
+                <!-- <iframe
+                    src=" https://www.whatsapp.com/richard_smells_funny/animation/security_localized.html?v=9bd4dace1&amp;l=en"
+                    frameborder="0" class="iframe" scrolling="no"></iframe> -->
+                <p class="etepara">ANOTHER PIECE OF ART</p>
+                <p id="pri">Process Video</p>
+                <p class="somepara"> 
+                    “When I say artist I mean the one who is building things<br> … some with a brush – some with a shovel – some choose a pen.” ~Jackson Pollock
+                </p>
+            </div>
+        </div>
+    
+    <div class=container">
+    <div class="row + center">
+    	<div class="col-md-12">
+    		   <p class="ama"><strong>S.C.A.P.E</strong> is a platform where I like to engage with my followers and clients. It is an abreviation which comprises of <strong>S</strong>ketched. <strong>C</strong>anvas. <strong>A</strong>rt. <strong>P</strong>aintings. <strong>E</strong>xpressionism.
+               This is a platform where I express my feelings through art. 
+               You will see that oceans, sky, citiscapes, forests,birds and trees are the main element of my paintings-This is becaude I find a deep connection between me and these creations. The beautiful colours in these creations force me to ponder over Allah's creations and then pour my feelings on canvas. 
+               I would love to paint custom paintings for you and that would be a Dream come true moment if i would help you through my art. Thankyou for visiting.
+               -<span class="name">Hanna Bibi</span></p>
+    	</div>
+    
+</div>
+</div>
+    <footer>
+            <div class="footermaindiv">
+                <ul class="footerlist">
+                    <li class="thelast">SCAPE</li> 
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Review</a></li>
+                </ul>
+                <ul class="footerlist">
+                    <li class="thelast">COMPANY</li> 
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <ul class="footerlist">
+                    <li class="thelast">PURCHASE</li>
+                    <li><a href="#">Paintings</a></li>
+                    <li><a href="#">Bookmarks</a></li>
+                    <li><a href="#">Books</a></li>
+                </ul>
+                <ul class="footerlist">
+                    <li class="thelast">HELP</li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+        </footer>
+  </div>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
